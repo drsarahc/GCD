@@ -7,16 +7,11 @@ http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartpho
 
 This CodeBook is based on text provided by the original researchers, whose contact information is as follows:
 
-Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, Luca Oneto.
-
-Smartlab - Non Linear Complex Systems Laboratory
-
-DITEN - Universita degli Studi di Genova.
-
-Via Opera Pia 11A, I-16145, Genoa, Italy.
-
-activityrecognition@smartlab.ws
-
+Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, Luca Oneto.  
+Smartlab - Non Linear Complex Systems Laboratory  
+DITEN - Universita degli Studi di Genova.  
+Via Opera Pia 11A, I-16145, Genoa, Italy.  
+activityrecognition@smartlab.ws  
 www.smartlab.ws
 
 ###From the README.txt file included with the downloaded data files:
@@ -33,6 +28,7 @@ www.smartlab.ws
 
 "Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Note the 'f' to indicate Frequency domain signals)."
 
+=============================================================================  
 
 The original data files included descriptive statistics and other variables that were generated from the raw data.  Only the mean and standard deviation for each signal measurement were retained for the purpose of this project. The variables retained were renamed for increased clarity (e.g. change “t” prefix to “Time.”, change “f” prefix to “Freq.”) and to eliminate characters that R does not support in variable names (e.g. dashes and parentheses).  Further details of how the output file was created can be found in the README.md file and in the comments of the run_analysis.R script, which should be present in this repository.
 
