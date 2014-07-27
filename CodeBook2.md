@@ -191,7 +191,7 @@ The following fields contain the mean of standard deviations of all observations
 	Frequency domain signals, body gyro jerk magnitude
 =============================================================================
 
-Last updated July 26, 2014 at 21:00 PST
+Last updated July 26, 2014 at 23:00 PST
 
 
 
