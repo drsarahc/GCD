@@ -1,5 +1,5 @@
 ##===================================================================
-##       run_analysis.R       Last mod: July 26, 2014 at 16:30 PDT
+##       run_analysis.R       Last mod: July 26, 2014 at 23:10 PDT
 ##===================================================================
 ## This program takes as input files found in the "UCI HAR Dataset" 
 ## folder. The output is a single tidied tab-delimited text file, 
@@ -11,7 +11,7 @@
 ## Initialize environment
 ##===================================================================
 setwd("/Users/SarahMBP/Desktop/Data Science Courses/Rcode/UCI HAR Dataset")
-outfilename <- "Carroll_GCD_Tidy2.txt"
+outfilename <- "/Users/SarahMBP/Desktop/Data Science Courses/Rcode/GCD/Carroll_GCD_Tidy2.txt"
 DEBUG <- TRUE   ## set to TRUE if debugging output is desired, else set to FALSE
 
 ##===================================================================
@@ -65,12 +65,15 @@ if (DEBUG) { names(extracted); dim(extracted) }
 ## actlabels contains V1: the integer values and V2: the factor names
 ## Integer values in the Activity field of the extracted table
 ## are replaced by corresponding factor names.
+##    Update: decided to provide improved labels rather than use what
+##    is in activity_labels.txt.
 ##===================================================================
 actlabels <- read.table("activity_Labels.txt",sep="",header=FALSE)
+actlabels.improved <- c("Walking","WalkingUpStairs","WalkingDownStairs",
+                        "Sitting","Standing","LyingDown")
+if (DEBUG) { actlabels.improved; head(extracted[1:5]) }
 
-if (DEBUG) { actlabels; head(extracted[1:5]) }
-
-extracted$Activity <- factor(extracted$Activity, labels = actlabels$V2)
+extracted$Activity <- factor(extracted$Activity, labels = actlabels.improved)
 
 if (DEBUG) { head(extracted[1:5]) }
 
@@ -131,3 +134,4 @@ write.table(bar, file=outfilename, append=FALSE, sep="\t", row.names=FALSE)
 if (DEBUG)  { print("kthxbai") }
 
 ##============================ EOF run_analysis.R ==================================
+
