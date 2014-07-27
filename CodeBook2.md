@@ -8,10 +8,15 @@ http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartpho
 This CodeBook is based on text provided by the original researchers, whose contact information is as follows:
 
 Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, Luca Oneto.
+
 Smartlab - Non Linear Complex Systems Laboratory
+
 DITEN - Universita degli Studi di Genova.
+
 Via Opera Pia 11A, I-16145, Genoa, Italy.
+
 activityrecognition@smartlab.ws
+
 www.smartlab.ws
 
 ###From the README.txt file included with the downloaded data files:
@@ -40,12 +45,12 @@ The original data files included descriptive statistics and other variables that
 =============================================================================
 ###Activity
 	Activity being performed when measurements were taken
-		WALKING
-		WALKING_UPSTAIRS
-		WALKING_DOWNSTAIRS
-		SITTING
-		STANDING
-		LAYING
+		Walking
+		WalkingUpStairs
+		WalkingDownStairs
+		Sitting
+		Standing
+		LyingDown
 =============================================================================
 The following fields contain the mean of means of all observations for this subject and activity for the indicated measurement; responses for every field are contained in [-1..1].
 
